@@ -1,3 +1,7 @@
+.SILENT:
+
+MAKEFLAGS += --silent
+
 NAME			:=	push_swap
 
 BONUS_NAME		:=	checker
@@ -71,5 +75,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re lib bonus
-
-.SILENT:
