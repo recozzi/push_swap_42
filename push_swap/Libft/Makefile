@@ -51,16 +51,6 @@ SRCS 		:=	is/ft_isalpha.c					\
 				mem/ft_memcmp.c					\
 				mem/ft_calloc.c					\
 												\
-				lst/ft_lstadd_back.c			\
-				lst/ft_lstadd_front.c			\
-				lst/ft_lstclear.c				\
-				lst/ft_lstdelone.c				\
-				lst/ft_lstiter.c				\
-				lst/ft_lstlast.c				\
-				lst/ft_lstmap.c					\
-				lst/ft_lstnew.c					\
-				lst/ft_lstsize.c				\
-												\
 				get_next_line/get_next_line.c	\
 												\
 				ft_printf/ft_print_hex.c		\
@@ -104,8 +94,8 @@ clean:
 	@$(RM) $(OBJS)
 	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed with $(WHITE)${RM} $(YELLOW)"
 
-fclean: clean
-	@$(RM) $(NAME) $(OBJS_DIR)
+fclean:
+	@$(RM) $(NAME) $(OBJS) $(OBJS_DIR)
 	@echo "$(RED)..and $(CYAN)${NAME} $(RED)as been removed"
 
 re: fclean all
