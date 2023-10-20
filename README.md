@@ -1,6 +1,5 @@
 <h1>Push Swap</h1>
 
-
 <h2>Overview</h2>
 "Push swap" is a data sorting tool that operates on two stacks using a limited set of instructions. The goal is to sort 500 numbers with less than 5500 moves.
 <h2>How To Use</h2>
@@ -14,6 +13,7 @@
   <li>To compile the bonus part of the code, use the following command:</li>
   <pre><code>make bonus</code></pre>
   <li>Now you are ready to use push_swap.</li>
+  
   <p>Pass a list of integers at your choice as arguments:</p>
   <pre><code>./push_swap 49 5 88 1 3 24 200</code></pre>
   <p>This will print a list of instructions that will sort the integers. You can verify this by running the checker program:</p>
