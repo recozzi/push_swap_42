@@ -47,11 +47,11 @@ OBJS			:=	$(addprefix $(OBJS_DIR), $(SRCS:.c=.o))
 
 # COLORS ================================================================= #
 
-RED = \033[0;91m
-GREEN = \033[0;92m
-YELLOW = \033[0;93m
-CYAN = \033[0;96m
-WHITE = \033[0;97m
+RED		=	\033[0;91m
+GREEN	=	\033[0;92m
+YELLOW	=	\033[0;93m
+CYAN	=	\033[0;96m
+WHITE	=	\033[0;97m
 
 # ======================================================================== #
 
@@ -77,12 +77,12 @@ bonus: lib $(OBJS)
 clean:
 	@$(RM) $(OBJS)
 	@make clean -C Libft
-	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed with $(WHITE)${RM} $(YELLOW)"
+	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed..."
 
 fclean: clean
 	@$(RM) $(NAME) $(BONUS_NAME) $(OBJS_DIR)
 	@make fclean -C Libft
-	@echo "$(RED)..and $(CYAN)${NAME} $(RED)as been removed"
+	@echo "$(RED)...And $(CYAN)${NAME} $(RED)as been removed."
 
 re: fclean all
 
