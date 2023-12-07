@@ -1,18 +1,6 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: recozzi <marvin@42.fr>                     +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/18 21:38:43 by recozzi           #+#    #+#              #
-#    Updated: 2023/11/18 21:38:44 by recozzi          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 .SILENT:
 
-MAKEFLAGS += --silent
+MAKEFLAGS		+=	--silent
 
 NAME			:=	push_swap
 
@@ -50,7 +38,6 @@ OBJS			:=	$(addprefix $(OBJS_DIR), $(SRCS:.c=.o))
 RED		=	\033[0;91m
 GREEN	=	\033[0;92m
 YELLOW	=	\033[0;93m
-CYAN	=	\033[0;96m
 WHITE	=	\033[0;97m
 
 # ======================================================================== #
@@ -77,12 +64,11 @@ bonus: lib $(OBJS)
 clean:
 	@$(RM) $(OBJS)
 	@make clean -C Libft
-	@echo "$(RED)All $(CYAN)$(NAME)$(RED)'s objects removed..."
+	@echo "$(RED)All object files removed.$(WHITE)"
 
 fclean: clean
 	@$(RM) $(NAME) $(BONUS_NAME) $(OBJS_DIR)
 	@make fclean -C Libft
-	@echo "$(RED)...And $(CYAN)${NAME} $(RED)as been removed."
 
 re: fclean all
 
